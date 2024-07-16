@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsivo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(to top, #050624 20%, #000000 80%);
+      position: relative;
+      
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+     
+  
+    }
+
+    .imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 10px
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para telas menores que 450px */
+    @media (max-width: 968px) {
+
+      body{
+    max-height: 1vh;
+  }
+
+  .imagem {
+    max-width: 80%;
+  }
+}
+
+/* Estilos para telas menores que 450px */
+@media (max-width: 480px) {
+ 
+  body{
+    max-height: 1vh;
+  }
+
+  .imagem {
+    max-width: 90%;
+  }
+  
+
+  .imagemnome {
+  width: 100%;
+  margin: 10px;
+  margin-top: -150px;
+  position: relative;
+}
+}
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="imagem">
+      <img src="img/Página de link Natansilgo.png" alt="Imagem 1">
+    </div>
+    <div class="imagem">
+      <img src="img/Página de link Natan Behance.png" alt="Imagem 2">
+    </div>
+    <div class="imagem">
+      <img src="img/Página de link meu site.png" alt="Imagem 3">
+    </div>
+    
+   
+    <!-- <div class="imagem">
+      <img src="iimages/Página de link whats.png" alt="Imagem 4">
+    </div> -->
+  </main>
+</body>
+</html>
